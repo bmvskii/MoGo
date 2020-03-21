@@ -1,0 +1,36 @@
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+
+@import 'mixins/position';
+
+//----------------------------------*\
+// CONFIG MODULES
+//----------------------------------*/
+
+// Config modules
+@import 'modules/vars';
+@import 'modules/normalize';
+@import 'modules/typography';
+@import 'modules/defaults';
+
+//----------------------------------*\
+// OBJECTS & MODULES
+//----------------------------------*/
+
+@import 'modules/misc';
+@import "modules/sprites";
+
+//----------------------------------*\
+// PARTIALS
+//----------------------------------*/
+
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/footer';
+@import 'partials/services';
+@import 'partials/team';
+
+
+// Enhancement modules
+@import 'modules/breakpoints';

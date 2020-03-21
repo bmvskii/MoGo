@@ -1,0 +1,28 @@
+::selection{
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+::-moz-selection{
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+::-webkit-selection{
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.decorative-line {
+  width: 60px;
+  height: 4px;
+  background-color: $red;
+}

@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+
+  &-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding-top: 35px;
+  }
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: $title-font;
+  line-height: 1;
+
+  &:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+}
+.nav {
+  display: flex;
+
+  .list {
+    display: flex;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 55px;
+      }
+    }
+    &__link {
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: color $transition;
+      position: relative;
+      z-index: 1;
+      font-family: $title-font;
+      padding: 10px 0;
+
+      &:hover,
+      &:focus {
+        color: $yellow;
+      }
+
+      &::before {
+        display: block;
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        width: 0;
+
+        height: 4px;
+
+        background-color: $yellow;
+        transition: $transition;
+      }
+      &:hover::before,
+      &:focus::before {
+        width: 100%;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+
+    .action {
+      &__icon {
+        margin-left: 40px;
+        height: 20px;
+        width: 20px;
+        transition: $transition;
+
+        &:hover,
+        &:focus {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

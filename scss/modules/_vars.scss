@@ -1,0 +1,22 @@
+// Colors
+$red: #f38181;
+$yellow: #fce38a;
+$cyan: #95e1d3;
+$green: #eaffd0;
+$white: #fff;
+$black: #000;
+$gray: #999;
+$light-gray: #ccc;
+
+// Fonts
+$decorative-font: "Kaushan Script", cursive;
+$title-font: "Montserrat", Arial, Helvetica, sans-serif;
+$text-font: "Roboto", Arial, Helvetica, sans-serif;
+
+// Transitions
+$time-f: cubic-bezier(.37, .3, .64, 1);
+$transition: .1s $time-f;
+
+
+//Gradients
+$gradient: linear-gradient(0deg, rgba(#fce38a, .8) 0%, rgba(#f38181, .8) 100%),

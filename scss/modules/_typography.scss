@@ -1,0 +1,23 @@
+.title {
+  font-family: $title-font;
+}
+
+.section-title {
+  @extend .title;
+
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.decorative-title {
+  font-family: $decorative-font;
+}
+
+.text {
+  font-family: $text-font;
+  color: $gray;
+  line-height: 1.5;
+  font-size: 15px;
+}

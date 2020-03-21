@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $light-gray;
+  padding: 10px 0;
+
+
+  &__info {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    .emphasized {
+      color: $red;
+      margin-left: 4px;
+    }
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+
+    &__button {
+      background-color: $cyan;
+      padding: 12px 35px;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: $transition;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: darken($cyan, 40%);
+      }
+    }
+    &__input {
+      border: 1px solid $light-gray;
+      border-right: none;
+      padding: 11px;
+      color: $light-gray;
+      font-style: italic;
+    }
+  }
+}
